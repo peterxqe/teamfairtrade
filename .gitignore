@@ -7,6 +7,8 @@ node_modules/
 
 ## Grunt
 .tmp/
+dist
+npm-debug.log.*
 
 ## System related
 *.DS_Store
