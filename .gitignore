@@ -1,0 +1,22 @@
+## IDE project information
+.idea/
+nbproject/
+
+## Node
+node_modules/
+
+## Grunt
+.tmp/
+
+## System related
+*.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+
+## Backup and temporary files
+*~
+*.tmp
+~$*.doc*
