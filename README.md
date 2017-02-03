@@ -1,0 +1,2 @@
+# teamfairtrade
+project fairtrade software
