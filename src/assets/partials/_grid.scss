@@ -1,5 +1,5 @@
 .grid {
-	min-heigth: 100%;
+	font-family: 'Raleway', sans-serif;
 	@for $i from 1 through 6 {
 		@for $j from 1 through 6 {
 			.tile-#{$i}-#{$j} {
@@ -26,5 +26,23 @@
 		clear: left;
 		content: '';
 		display: block;
+	}
+	.font-italic {
+		font-style: italic;
+	}
+	.font-light {
+		font-weight: 300;
+	}
+	.font-medium {
+		font-weight: 500;
+	}
+	.font-semibold {
+		font-weight: 600;
+	}
+	.font-bold {
+		font-weight: 700;
+	}
+	.font-black {
+		font-weight: 900;
 	}
 }

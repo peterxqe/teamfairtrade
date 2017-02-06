@@ -1,9 +1,5 @@
 @mixin tile ($width, $heigth) {
-	box-sizing: border-box;
-	border: 0.3vw solid white;
 	width: $width + 0%;
 	height: #{$heigth}vw;
-	display: inline-block;
-	float: left;
-	overflow: hidden;
+	line-height: #{$heigth}vw;
 }
