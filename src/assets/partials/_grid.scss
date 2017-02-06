@@ -1,0 +1,30 @@
+.grid {
+	min-heigth: 100%;
+	@for $i from 1 through 6 {
+		@for $j from 1 through 6 {
+			.tile-#{$i}-#{$j} {
+				@include tile($i / 0.06, $j / 0.06);
+			}
+		}
+	}
+	.tile-bottom-margin {
+		border-bottom-width: 6px;
+	}
+	.tile-white {
+		background-color: white;
+	}
+	.tile-blue {
+		background-color: $blue;
+	}
+	.tile-red {
+		background-color: $red;
+	}
+	.tile-green {
+		background-color: $green;
+	}
+	&:after {
+		clear: left;
+		content: '';
+		display: block;
+	}
+}

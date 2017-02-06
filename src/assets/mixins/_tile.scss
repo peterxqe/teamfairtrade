@@ -1,0 +1,9 @@
+@mixin tile ($width, $heigth) {
+	box-sizing: border-box;
+	border: 2px solid white;
+	width: $width + 0%;
+	height: #{$heigth}vh;
+	display: inline-block;
+	float: left;
+	background-color: gray;
+}
