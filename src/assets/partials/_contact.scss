@@ -1,0 +1,69 @@
+h2 {
+	color: #FFFFFF; //TODO variables
+	text-align: center;
+	margin: 5% 0 10% 0;
+	text-transform: uppercase;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ form {
+	visibility: visible;
+}
+
+.contact {
+	padding-bottom: 2%;
+	width: 100%;
+}
+
+.link {
+	float: left;
+	height: 150px;
+	background-color: #75c398; //TODO variables
+}
+
+.contact-form {
+	position: relative;
+	visibility: hidden;
+	background-color: #F56462; //TODO variables
+	width: 20%;
+	float: left;
+	padding-bottom: 10%;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: -40px;
+		border: transparent solid 20px;
+		border-right-color: #F56462; //TODO variables
+	}
+
+	.input, .send {
+		display: block;
+		width: 70%;
+		margin: 0% 3% 3% 14%;
+		padding: 1%;
+		border: 1px solid #c3c1bc; //TODO variables
+		text-transform: uppercase;
+		outline:none;
+	}
+	&:active{
+
+	}
+
+	textarea {
+		height: 150px;
+		resize: none;
+	}
+
+	.send {
+		background-color: #75c398; //TODO variables
+		color: #FFFFFF; //TODO variables
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+}

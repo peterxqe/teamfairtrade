@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		watch: {
 			sass: {
 				// We watch and compile sass files as normal but don't live reload here
-				files: ['src/assets/style.scss'],
+				files: ['src/assets/**/*.scss'],
 				tasks: ['sass'],
 			},
 			html: {
