@@ -5,13 +5,14 @@
 
   .footer-image{
     height:60px;
-    margin:10px 0 0 50px;
+    margin:10px 0 0 5px;
   }
   .footer-left{
     float:left;
   }
   .footer-right{
     float:right;
+
   }
   li{
     display:inline-block;
@@ -26,6 +27,7 @@
   }
   .page-bottom-list{
     display:inline;
+    padding:0;
   }
 }
 
@@ -52,4 +54,18 @@
       margin-top:3px;
     }
   }
+}
+@media screen and (min-width: 786px) {
+  .page-bottom{
+    height: 100vh;
+    width:75px;
+    float: right;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer-right{
+    flex:1;
+  }
+
 }
