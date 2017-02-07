@@ -3,9 +3,27 @@
 	@for $i from 1 through 6 {
 		@for $j from 1 through 6 {
 			.tile-#{$i}-#{$j} {
-				@include tile($i / 0.06, $j / 0.06);
+				width: $i / 0.06 + 0%;
+				height: #{$j / 0.06}vw;
+				line-height: #{$j / 0.06}vw;
+			}	
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		@for $i from 1 through 6 {
+			@for $j from 1 through 6 {
+				.tile-pc-#{$i}-#{$j} {
+					width: #{$i / 0.06}vh;
+					min-width: #{$i / 0.06}vh;
+					height: #{$j / 0.06}vh;
+					line-height: #{$j / 0.06}vh;
+				}
 			}
 		}
+	}
+	.tile-full-width {
+		width: 100%;
+		height: 100vh;
 	}
 	.tile-bottom-margin {
 		border-bottom-width: 1.2vw;
@@ -44,5 +62,22 @@
 	}
 	.font-black {
 		font-weight: 900;
+	}
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		heigth: 100%;
+		> div {
+			min-width: 100vh;
+			flex: 0 0 0;
+		}
+		.tile {
+			border-width: 0;
+		}
+		.tile-width-full {
+			min-width: 100vw;
+		}
+		.tile-width-4 {
+			min-width: 66.66667vh;
+		}
 	}
 }
