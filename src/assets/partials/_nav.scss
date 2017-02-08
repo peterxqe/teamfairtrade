@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+nav.main-nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 300px;
+	background-color: $primary-green;
+	font-family: "Raleway", sans-serif;
+	font-size: 15pt;
+
+	> .main-nav-top {
+		margin: 60% 0 0;
+		flex: 1;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	> .main-nav-top > li {
+		overflow: hidden;
+		transition: .3s background-color;
+	}
+
+	> .main-nav-top > li.active {
+		background-color: mix($primary-green, #ffffff, 75%);
+	}
+
+	> .main-nav-top > li:hover {
+		background-color: mix($primary-green, #ffffff, 60%);
+		transition: .3s background-color;
+	}
+
+	> .main-nav-top > li > a {
+		display: block;
+		padding: 5px 0 5px 25px;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	> .main-nav-bottom {
+		list-style-type: none;
+		margin: 0 20px 50%;
+		padding: 0;
+	}
+
+	> .main-nav-bottom > li {
+		transition: .3s background-color;
+		background-color: $primary-red;
+
+	}
+
+	> .main-nav-bottom > li:active {
+		background-color: mix($primary-red, #ffffff, 60%);
+	}
+
+	> .main-nav-bottom > li:hover {
+		background-color: mix($primary-red, #ffffff, 75%);
+	}
+
+	> .main-nav-bottom > li > a {
+		display: block;
+		text-align: center;
+		padding: 5px 0 5px 5px;
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
