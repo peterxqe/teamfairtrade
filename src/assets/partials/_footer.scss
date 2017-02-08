@@ -7,24 +7,21 @@
     height:60px;
     margin:10px 0 0 5px;
   }
+
   .footer-left{
     float:left;
   }
+
   .footer-right{
     float:right;
 
   }
-  li{
-    display:inline-block;
-    margin-top:7px;
-  }
+
   .social-media-links{
-    margin:0 5px;
+    display:inline-block;
+    margin:6% 5px 0 10px;
   }
 
-  .social-media-icons{
-    margin:5px;
-  }
   .page-bottom-list{
     display:inline;
     padding:0;
@@ -42,17 +39,13 @@
     }
 
     .social-media-links{
-      margin:0 5px;
+      margin-top:2%;
     }
 
     .social-media-icons{
       height:15px;
-      margin:5px;
+    }
 
-    }
-    li{
-      margin-top:3px;
-    }
   }
 }
 @media screen and (min-width: 786px) {
