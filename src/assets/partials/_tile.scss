@@ -23,14 +23,14 @@
 		}
 		&::after {
 			/* Used for the line below every tile */
-			position: absolute;
+			position: relative;
 			bottom: -0.75vw;
 			content: '';
 			border-bottom: 0.3vw solid white;
 			left: 12%;
 			right: 12%;
 		}
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 786px) {
 			font-size: 5vh;
 		}
 	}
