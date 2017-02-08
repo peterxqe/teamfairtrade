@@ -1,4 +1,4 @@
-h2 {
+.contact-title {
 	color: #FFFFFF; //TODO variables
 	text-align: center;
 	margin: 2% 0 8% 0;
@@ -6,11 +6,11 @@ h2 {
 	font-size: 16px;
 }
 
-input[type=checkbox] {
+.link-contact[type=checkbox] {
 	visibility: hidden;
 }
 
-input[type=checkbox]:checked ~ form {
+.link-contact[type=checkbox]:checked ~ .contact-form {
 	visibility: visible;
 	width:100%;
 	transition: 1.5s width ease-out;
@@ -32,52 +32,47 @@ input[type=checkbox]:checked ~ form {
 	&::before {
 		content: '';
 		position: relative;
-		top: 35px;
-		left: -40px;
+		top: 0px;
+		left: 30px;
 		border: transparent solid 20px;
 		border-right-color: #F56462; //TODO variables
 	}
 
-	.input,.send {
-		display: block;
-		width: 70%;
-		margin: 0% 3% 1% 13%;
-		padding: 1%;
-		border: 1px solid #c3c1bc; //TODO variables
-		text-transform: uppercase;
-		outline:none;
-
-	}
-	.send{
-		width: 72%;
-		&:hover{
-			background-color:#5d9c79;
-		}
-	}
-
-
-	textarea {
-		height: 150px;
-		resize: none;
+	.input {
+		@include form-style;
 	}
 
 	.send {
+		@include form-style;
 		background-color: #75c398; //TODO variables
 		color: #FFFFFF; //TODO variables
 		font-weight: bold;
 		text-transform: uppercase;
+		width: 72%;
+		&:hover {
+			background-color: #5d9c79;
+		}
 	}
 
+	.message {
+		@include form-style;
+		height: 150px;
+		resize: none;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	.contact-form {
 		height: 100vh;
+		&::before {
+			top: 35px;
+			left: -40px;
+		}
 	}
-	input[type=checkbox]:checked ~ form {
+	.link-contact[type=checkbox]:checked ~ .contact-form{
 		width:30%;
 	}
-	h2{
+	.contact-title{
 		font-size: 24px;
 	}
 	.input,.send{
