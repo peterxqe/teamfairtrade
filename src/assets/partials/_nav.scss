@@ -1,5 +1,3 @@
-// todo Replace #ffffff occurences with a variable
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:500');
 
 .link-nav[type=checkbox] {
@@ -35,59 +33,61 @@ nav.main-nav {
 	font-family: "Raleway", sans-serif;
 	font-size: 15pt;
 
-	> .main-nav-top {
+	> .main-nav-list {
 		margin: 60% 0 0;
 		flex: 1;
 		padding: 0;
 		list-style-type: none;
 	}
 
-	> .main-nav-top > li {
+	> .main-nav-list > li {
 		overflow: hidden;
 		transition: background-color .3s;
 	}
 
-	> .main-nav-top > li.active {
-		background-color: mix($primary-green, #ffffff, 75%);
+	> .main-nav-list > li.active {
+		background-color: mix($primary-green, $white, 75%);
 	}
 
-	> .main-nav-top > li:hover {
-		background-color: mix($primary-green, #ffffff, 60%);
+	> .main-nav-list > li:hover {
+		background-color: mix($primary-green, $white, 60%);
 		transition: background-color .3s;
 	}
 
-	> .main-nav-top > li > a {
+	> .main-nav-list > li > a {
 		display: block;
 		padding: 5px 0 5px 25px;
 		text-decoration: none;
-		color: #ffffff;
+		color: $white;
 	}
 
-	> .main-nav-bottom {
-		list-style-type: none;
-		margin: 0 20px 50%;
-		padding: 0;
-	}
-
-	> .main-nav-bottom > li {
-		transition: background-color .3s;
+	> .main-nav-list > li.big-and-red {
 		background-color: $primary-red;
-
+		list-style-type: none;
+		margin-top: 25%;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 0;
+		padding: 0;
+		transition: background-color .3s;
 	}
 
-	> .main-nav-bottom > li:active {
-		background-color: mix($primary-red, #ffffff, 60%);
+	> .main-nav-list > li.big-and-red:active {
+		background-color: mix($primary-red, $white, 60%);
 	}
 
-	> .main-nav-bottom > li:hover {
-		background-color: mix($primary-red, #ffffff, 75%);
+	> .main-nav-list > li.big-and-red:hover {
+		background-color: mix($primary-red, $white, 75%);
+	}
+	> .main-nav-list > li.big-and-red:focus {
+		background-color: mix($primary-red, $white, 75%);
 	}
 
-	> .main-nav-bottom > li > a {
+	> .main-nav-list > li.big-and-red  > a {
 		display: block;
 		text-align: center;
 		padding: 5px 0 5px 5px;
-		color: #ffffff;
+		color: $white;
 		text-decoration: none;
 	}
 }
@@ -113,15 +113,18 @@ nav.main-nav {
 		background-color: $primary-green;
 		transition: height 1s ease-in;
 
-		> .main-nav-top {
+		> .main-nav-list {
 			margin: 70px 0 0;
 			padding: 0;
 			list-style-type: none;
 		}
 
-		> .main-nav-bottom {
+		> .main-nav-list > li.big-and-red {
 			list-style-type: none;
-			margin: 0 5px 5px;
+			margin-top: 5px;
+			margin-right: 5px;
+			margin-left: 5px;
+			margin-bottom: 5px;
 			padding: 0;
 		}
 	}
