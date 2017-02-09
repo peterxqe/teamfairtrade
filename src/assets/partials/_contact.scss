@@ -25,14 +25,13 @@
 	position: relative;
 	visibility: hidden;
 	background-color: #F56462; //TODO variables
-	width: 0%;
+	width: 0;
 	float: left;
-	padding-bottom: 10%;
 
 	&::before {
 		content: '';
 		position: relative;
-		top: 0px;
+		top: 0;
 		left: 30px;
 		border: transparent solid 20px;
 		border-right-color: #F56462; //TODO variables
@@ -76,7 +75,7 @@
 		font-size: 24px;
 	}
 	.input,.send{
-		margin: 0% 3% 3% 13%;
+		margin: 0 3% 3% 13%;
 	}
 
 }
