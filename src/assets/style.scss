@@ -2,10 +2,13 @@
 @import "vendor/_normalize.css";
 
 // Modules
-@import "modules/_vars.scss";
+@import 'modules/_vars.scss';
 
-//Partials
+// Partials
+@import 'partials/_grid.scss';
+@import 'partials/_full-width.scss';
+@import 'partials/_tile.scss';
 @import "partials/_footer.scss";
 
-//Pages
-@import "pages/_homepage.scss";
+// Pages
+@import 'pages/_homepage.scss';
