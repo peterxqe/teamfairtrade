@@ -1,0 +1,37 @@
+.tile {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 0.3vw solid white;
+	text-align: center;
+	font-weight: 400;
+	a.wrapper {
+		color: white;
+		width: 100%;
+		font-size: 5vw;
+		text-transform: uppercase;
+		text-decoration: none;
+		vertical-align: middle;
+		display: inline-block;
+		line-height: normal;
+		position: relative;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 40%;
+		}
+		&::after {
+			/* Used for the line below every tile */
+			position: relative;
+			bottom: -0.75vw;
+			content: '';
+			border-bottom: 0.3vw solid white;
+			left: 12%;
+			right: 12%;
+		}
+		@media screen and (min-width: 768px) {
+			font-size: 5vh;
+		}
+	}
+}
