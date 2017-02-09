@@ -2,6 +2,7 @@
 	background-color: $green;
 	height: 80px;
 	width: 100%;
+  	clear:left;
 
 
 	.footer-image {
@@ -28,29 +29,6 @@
 	  	margin: 0;
 	}
 }
-
-@media screen and (max-width: 640px) {
-	.page-bottom {
-		height: 30px;
-		width: 100%;
-	  	clear:left;
-
-		.footer-image {
-			height: 20px;
-			margin: 7px 0 0 10px;
-		}
-
-		.social-media-links {
-			margin-top: 8%;
-		}
-
-		.social-media-icons {
-			height: 15px;
-		}
-
-	}
-}
-
 @media screen and (min-width: 768px) {
 	.page-bottom {
 		height: 100vh;
