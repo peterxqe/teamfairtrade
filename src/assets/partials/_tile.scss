@@ -23,7 +23,7 @@
 		}
 		&::after {
 			/* Used for the line below every tile */
-			position: relative;
+			position: absolute;
 			bottom: -0.75vw;
 			content: '';
 			border-bottom: 0.3vw solid white;
