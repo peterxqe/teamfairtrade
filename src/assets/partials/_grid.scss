@@ -24,21 +24,22 @@
 	.tile-full-width {
 		width: 100%;
 		height: 100vh;
+		position: initial;
 	}
 	.tile-bottom-margin {
 		border-bottom-width: 1.2vw;
 	}
 	.tile-white {
-		background-color: white;
+		background-color: $white;
 	}
 	.tile-blue {
-		background-color: $blue;
+		background-color: $primary-blue;
 	}
 	.tile-red {
-		background-color: $red;
+		background-color: $primary-red;
 	}
 	.tile-green {
-		background-color: $green;
+		background-color: $primary-green;
 	}
 	&:after {
 		clear: left;
