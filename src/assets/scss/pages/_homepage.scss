@@ -1,1 +1,9 @@
-// todo Must be merged
+body {
+	margin: 0;
+}
+@media screen and (min-width: 768px) {
+	body {
+		overflow-y: hidden;
+		overflow-x: visible;
+	}
+}

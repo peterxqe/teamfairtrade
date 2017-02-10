@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'dist/assets/style.css': 'src/assets/style.scss'
+					'dist/assets/css/style.css': 'src/assets/scss/style.scss'
 				}
 			}
 		},
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		watch: {
 			sass: {
 				// We watch and compile sass files as normal but don't live reload here
-				files: ['src/assets/**/*.scss'],
+				files: ['src/assets/scss/**/*.scss'],
 				tasks: ['sass']
 			},
 			html: {
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 				tasks: ['copy:main']
 			},
 			images: {
-				files: ['src/**.png', 'src/**.jpg', 'src/**.gif', 'src/**.svg'],
+				files: ['src/**/*.png', 'src/**/*.jpg', 'src/**/*.gif', 'src/**/*.svg'],
 				tasks: ['copy:main']
 			},
 			configFiles: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'src',
-					src: ['**/*.html', 'src/**.png', 'src/**.jpg', 'src/**.gif', 'src/**.svg'],
+					src: ['**/*.html', '**/*.png', '**/*.jpg', '**/*.gif', '**/*.svg'],
 					dest: 'dist/',
 					filter: 'isFile'
 				}]

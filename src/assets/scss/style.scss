@@ -1,16 +1,19 @@
 // Vendor
-@import "vendor/normalize.scss";
+@import "vendor/_normalize.scss";
 
 // Mixins
-@import "mixins/_square_block";
+@import "mixins/_form-style";
 
 // Modules
-@import "modules/_defaults.scss";
 @import "modules/_vars.scss";
 
 // Partials
-
+@import 'partials/_nav.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_grid.scss';
+@import 'partials/_full-width.scss';
+@import 'partials/_tile.scss';
+@import "partials/_footer.scss";
 
 // Pages
-
-
+@import 'pages/_homepage.scss';
