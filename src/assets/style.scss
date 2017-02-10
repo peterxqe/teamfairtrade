@@ -1,8 +1,8 @@
-// Mixins
-@import "mixins/_form-style";
-
 // Vendor
 @import 'vendor/_normalize.scss';
+
+// Mixins
+@import "mixins/_form-style";
 
 // Modules
 @import 'modules/_vars.scss';
