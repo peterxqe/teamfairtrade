@@ -3,17 +3,17 @@
 	width: 70%;
 	margin: 5% 3% 1% 13%;
 	padding: 1%;
-	color:#111111;
+	color: $black;
 	text-transform: uppercase;
 	outline: none;
 	&::-webkit-input-placeholder {
-		color:    $black;
+		color: $black;
 	}
 	&:-moz-placeholder {
-		color:    $black;
+		color: $black;
 	}
 	&::-moz-placeholder {
-		color:    $black;
+		color: $black;
 	}
 	&:-ms-input-placeholder {
 		color: $black;
