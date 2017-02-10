@@ -7,7 +7,7 @@
 
 	.footer-image {
 		height: 57px;
-		margin: 10px 0 26px 5px;
+	  	margin: 10px 0 8px 5px;
 	}
 
 	.footer-left {
@@ -36,8 +36,14 @@
 		float: right;
 		display: flex;
 		flex-direction: column-reverse;
-	}
 
+	  	.footer-image {
+			margin: 10px 0 26px 5px;
+	  	}
+	}
+  	.footer-image {
+	  	margin: 10px 0 26px 5px;
+	}
 	.footer-right {
 		flex: 1;
 	}
