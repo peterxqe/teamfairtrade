@@ -1,6 +1,0 @@
-// Example mixin
-@mixin square_block($length, $type: block) {
-	display: $type;
-	height: $length;
-	width: $length;
-}

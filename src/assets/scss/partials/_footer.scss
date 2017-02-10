@@ -1,0 +1,48 @@
+.page-bottom {
+	background-color: $primary-green;
+	height: 80px;
+	width: 100%;
+  	clear:left;
+
+
+	.footer-image {
+		height: 60px;
+		margin: 10px 0 0 5px;
+	}
+
+	.footer-left {
+		float: left;
+	}
+
+	.footer-right {
+		float: right;
+
+	}
+
+	.social-media-links {
+		display: inline-block;
+		margin: 6% 5px 0 10px;
+	}
+
+	.page-bottom-list {
+		padding: 0;
+	  	margin: 0;
+	}
+}
+@media screen and (min-width: 768px) {
+	.page-bottom {
+		height: 100vh;
+		width: 75px;
+		float: right;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.footer-right {
+		flex: 1;
+	}
+	.social-media-icons {
+		margin: 6% auto 0 auto;
+	}
+
+}

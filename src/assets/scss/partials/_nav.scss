@@ -1,1 +1,114 @@
-// todo Must be merged
+.link-nav[type=checkbox] {
+	visibility: hidden;
+}
+
+.nav-image {
+	float: left;
+	position: relative;
+	z-index: 1;
+	width: 70px;
+}
+
+.link-nav[type=checkbox]:checked ~ .main-nav {
+	height: 100%;
+	width: 300px;
+	transition: height .9s ease-out;
+}
+
+nav.main-nav {
+	height: 0;
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: -70px;
+	display: flex;
+	flex-direction: column;
+	transition: height 1.2s ease-in;
+
+	background-color: $primary-green;
+	font-size: 15pt;
+
+	> .main-nav-list {
+		margin: 60% 0 0;
+		flex: 1;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	> .main-nav-list > li {
+		overflow: hidden;
+		transition: background-color .3s;
+	}
+
+	> .main-nav-list > li.active {
+		background-color: mix($primary-green, $white, 75%);
+	}
+
+	> .main-nav-list > li:hover {
+		background-color: mix($primary-green, $white, 60%);
+	}
+
+	> .main-nav-list > li > a,
+	> .main-nav-list > li > label
+	{
+		display: block;
+		padding: 5px 0 5px 25px;
+		text-decoration: none;
+		color: $white;
+	}
+
+	> .main-nav-list > li.big-and-red {
+		background-color: $primary-red;
+		list-style-type: none;
+		margin: 25% 20px 0;
+		padding: 0;
+		transition: background-color .3s;
+	}
+
+	> .main-nav-list > li.big-and-red:active {
+		background-color: mix($primary-red, $white, 60%);
+	}
+
+	> .main-nav-list > li.big-and-red:hover, > .main-nav-list > li.big-and-red:focus {
+		background-color: mix($primary-red, $white, 75%);
+	}
+
+	> .main-nav-list > li.big-and-red  > a {
+		display: block;
+		text-align: center;
+		padding: 5px 0 5px 5px;
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.link-nav[type=checkbox]:checked ~ .main-nav {
+		width: 100%;
+		height: 75%;
+		transition: height .4s ease-out;
+	}
+
+	nav.main-nav {
+		width: 100%;
+		height: 0;
+		top: -70px;
+		left: 0;
+		transition: height 1s ease-in;
+
+		> .main-nav-list {
+			margin: 70px 0 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		> .main-nav-list > li.big-and-red {
+			list-style-type: none;
+			margin: 5px 25px;
+			padding: 0;
+		}
+	}
+}

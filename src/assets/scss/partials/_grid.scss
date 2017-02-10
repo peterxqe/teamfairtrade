@@ -1,1 +1,87 @@
-// todo Must be merged
+.grid {
+	font-family: 'Raleway', sans-serif;
+	@for $i from 1 through 6 {
+		@for $j from 1 through 6 {
+			.tile-#{$i}-#{$j} {
+				width: $i / 0.06 + 0%;
+				height: #{$j / 0.06}vw;
+				line-height: #{$j / 0.06}vw;
+			}	
+		}
+	}
+	@media screen and (min-width: 768px) {
+		@for $i from 1 through 6 {
+			@for $j from 1 through 6 {
+				.tile-pc-#{$i}-#{$j} {
+					width: #{$i / 0.06}vh;
+					min-width: #{$i / 0.06}vh;
+					height: #{$j / 0.06}vh;
+					line-height: #{$j / 0.06}vh;
+				}
+			}
+		}
+	}
+	.tile-full-width {
+		width: 100%;
+		min-height: 100vh;
+		position: initial;
+	}
+	.tile-bottom-margin {
+		border-bottom-width: 1.2vw;
+	}
+	.tile-white {
+		background-color: $white;
+	}
+	.tile-blue {
+		background-color: $primary-blue;
+	}
+	.tile-red {
+		background-color: $primary-red;
+	}
+	.tile-green {
+		background-color: $primary-green;
+	}
+	&:after {
+		clear: left;
+		content: '';
+		display: block;
+	}
+	.font-italic {
+		font-style: italic;
+	}
+	.font-light {
+		font-weight: 300;
+	}
+	.font-medium {
+		font-weight: 500;
+	}
+	.font-semibold {
+		font-weight: 600;
+	}
+	.font-bold {
+		font-weight: 700;
+	}
+	.font-black {
+		font-weight: 900;
+	}
+	@media screen and (min-width: 768px) {
+		display: flex;
+		height: 100%;
+		> div {
+			min-width: 100vh;
+			flex: 0 0 0;
+		}
+		.tile {
+			border-width: 0;
+		}
+		.tile-width-full {
+			min-width: 100vw;
+		}
+		.tile-full-width {
+			height: 100vh;
+		}
+		.tile-width-4 {
+			min-width: 66.66667vh;
+		}
+	}
+}
