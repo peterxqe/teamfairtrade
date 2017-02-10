@@ -12,7 +12,7 @@
 
 .link-contact[type=checkbox]:checked ~ .contact-form {
 	visibility: visible;
-	height: 500px;
+	height: 600px;
 	transition: .9s height ease-out;
 }
 
@@ -30,9 +30,17 @@
 	float: left;
 	left: 0;
 	top: -66px;
-
+	&::after{
+		content: "";
+		position: absolute;
+		right:100%;
+		top:10%;
+		border: solid transparent 20px;
+		border-right-color: $primary-red;
+	}
 	.input {
 		@include form-style;
+		color:#111111;
 	}
 
 	.send {
@@ -42,8 +50,9 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		width: 72%;
+		padding: 2% 0 2% 0;
 		&:hover {
-			background-color: #5d9c79;
+			background-color: $primary-green;
 		}
 	}
 
@@ -52,6 +61,7 @@
 		height: 150px;
 		resize: none;
 	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -60,8 +70,11 @@
 		left: -75px;
 		width: 0;
 	}
+	.contact-title{
+		margin: 15% 0 25% 0;
+	}
 	.link-contact[type=checkbox]:checked ~ .contact-form{
-		width: 30%;
+		width: 300px;
 		height: 101vh;
 		transition: .9s width ease-out;
 	}
