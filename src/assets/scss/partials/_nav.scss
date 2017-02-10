@@ -40,7 +40,9 @@ nav.main-nav {
 
 	> .main-nav-list > li {
 		overflow: hidden;
-		transition: background-color .3s;
+		padding-left: 0;
+		text-align: left;
+		transition: background-color .3s, padding-left .1s ease-in;
 	}
 
 	> .main-nav-list > li.active {
@@ -49,15 +51,20 @@ nav.main-nav {
 
 	> .main-nav-list > li:hover {
 		background-color: mix($primary-green, $white, 60%);
+		padding-left: 5px;
+		text-align: left;
+		transition: padding-left .1s ease-out;
 	}
 
 	> .main-nav-list > li > a,
 	> .main-nav-list > li > label
 	{
 		display: block;
+		margin: 3px 0;
 		padding: 5px 0 5px 25px;
 		text-decoration: none;
 		color: $white;
+		cursor: pointer;
 	}
 
 	> .main-nav-list > li.big-and-red {
@@ -100,7 +107,6 @@ nav.main-nav {
 		transition: height 1s ease-in;
 
 		> .main-nav-list {
-			margin: 70px 0 0;
 			padding: 0;
 			list-style-type: none;
 		}
