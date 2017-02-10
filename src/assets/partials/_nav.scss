@@ -51,12 +51,15 @@ nav.main-nav {
 		background-color: mix($primary-green, $white, 60%);
 	}
 
-	> .main-nav-list > li > a {
+	> .main-nav-list > li > a,
+	> .main-nav-list > li > label
+	{
 		display: block;
 		padding: 5px 0 5px 25px;
 		text-decoration: none;
 		color: $white;
 	}
+
 
 	> .main-nav-list > li.big-and-red {
 		background-color: $primary-red;
