@@ -34,6 +34,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
 		connect: {
 			server: {
 				options: {
@@ -43,6 +44,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
 		mkdir: {
 			all: {
 				options: {
@@ -50,6 +52,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
 		copy: {
 			main: {
 				files: [{
