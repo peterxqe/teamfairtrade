@@ -7,12 +7,21 @@
 	position: relative;
 	z-index: 1;
 	width: 70px;
+	height: 70px;
+	background: url('../img/menu-alt-512.png');
+	background-size: 100%;
+	display: inline-block;
 }
-
-.link-nav[type=checkbox]:checked ~ .main-nav {
-	height: 100%;
-	width: 300px;
-	transition: height .9s ease-out;
+.link-nav:checked {
+	~ label .nav-image {
+		background: url('../img/closemenu.png');
+		background-size: 100%;
+	}
+	~ .main-nav {
+		height: 100%;
+		width: 300px;
+		transition: height .9s ease-out;
+	}
 }
 
 nav.main-nav {
