@@ -1,9 +1,23 @@
 @mixin form-style{
 	display: block;
 	width: 70%;
-	margin: 0 3% 1% 13%;
+	margin: 5% 3% 1% 13%;
 	padding: 1%;
-	border: 1px solid #c3c1bc;
+	color: $black;
 	text-transform: uppercase;
 	outline: none;
+	&::-webkit-input-placeholder {
+		color: $black;
+	}
+	&:-moz-placeholder {
+		color: $black;
+	}
+	&::-moz-placeholder {
+		color: $black;
+	}
+	&:-ms-input-placeholder {
+		color: $black;
+
+	}
+
 }
